@@ -1,51 +1,88 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import HorizontalCard from "../components/HorizontalCard.astro";
+import StackCard from "../components/StackCard.astro";
 ---
 
 <BaseLayout title = "Projects" sideBarActiveItemID="projects">
+  <div class="text-5xl font-bold mb-10">Stack</div>
   <div>
-    <div class="text-3xl w-full font-bold mb-5">Projects Header</div>
+    <div class="text-3xl w-full font-bold mb-5">Back-end</div>
   </div>
 
-  <HorizontalCard
-    title="Demo Project 1"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
-    badge="NEW"
+  <StackCard
+    title="Java"
+    img="/java.svg"
+    badge="8 - 11 - 17 - 21"
   />
   <div class="divider my-0"></div>
-  <HorizontalCard
-    title="Demo Project 2"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
+  <StackCard
+    title="Spring Framework"
+    img="/spring.svg"
+    badge="Boot - Data - Security"
+  />
+  <div class="divider my-0"></div>
+  <StackCard
+    title="JUnit 5"
+    img="/junit.png"
+    badge="Unit Tests"
+  />
+  <div class="divider my-0"></div>
+  <StackCard
+    title="PHP"
+    img="/php.svg"
+  />
+  <div class="divider my-0"></div>
+  <StackCard
+    title="C++"
+    img="/c++.svg"
   />
 
   <div>
-    <div class="text-3xl w-full font-bold mb-5 mt-10">Projects Header</div>
+    <div class="text-3xl w-full font-bold mb-5 mt-10">Front-end</div>
   </div>
 
-  <HorizontalCard
-    title="Demo Project 3"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
-    badge="FOSS"
+  <StackCard
+    title="Vanilla Basics"
+    img="/web.svg"
+    badge="HTML - CSS - JS"
   />
   <div class="divider my-0"></div>
-  <HorizontalCard
-    title="Demo Project 4"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
+  <StackCard
+    title="Astro.js"
+    img="/astro.svg"
+   
   />
   <div class="divider my-0"></div>
-  <HorizontalCard
-    title="Demo Project 5"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
+  <StackCard
+    title="Tailwind"
+    img="/tailwind.svg"
+  />
+
+  <div>
+    <div class="text-3xl w-full font-bold mt-10 mb-5">Databases</div>
+  </div>
+
+  <StackCard
+    title="MongoDB"
+    img="/mongo.svg"
+    badge="NoSQL"
+  />
+  <div class="divider my-0"></div>
+  <StackCard
+    title="PostgreSQL"
+    img="/postgresql.svg"
+    badge="SQL"
+  />
+  <div class="divider my-0"></div>
+  <StackCard
+    title="Microsoft SQL Server"
+    img="/sqlserver.svg"
+    badge="SQL"
+  />
+  <div class="divider my-0"></div>
+  <StackCard
+    title="MySQL"
+    img="/mysql.svg"
+    badge="SQL"
   />
 </BaseLayout>

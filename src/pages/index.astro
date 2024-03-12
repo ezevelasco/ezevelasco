@@ -12,20 +12,23 @@ const last_posts = posts.slice(0, 3);
 <BaseLayout sideBarActiveItemID="home">
   <div class="pb-12 mt-5">
     <div class="text-xl py-1">Hey there 👋</div>
-    <div class="text-5xl font-bold">I'm Manuel Ernesto</div>
-    <div class="text-3xl py-3 font-bold">Software Engineer and Entrepreneur</div>
+    <div class="text-5xl font-bold">I'm Ezequiel Velasco</div>
+    <div class="text-3xl py-3 font-bold">Backend Developer and System Analyst</div>
     <div class="py-2">
       <text class="text-lg">
-        This is <b>Astrofy</b> a free and open-source template for your Personal Portfolio Website built with Astro and TailwindCSS.
-        Create in minutes a website with Blog, CV, Project Section, Store and RSS Feed. I hope you find
-        it useful!
-      </text>
+        I'm a <b>Java Back-end Software Developer</b> with 3 years of experience. I love
+         programming and creating technological solutions that have a positive impact.
+          I have a degree in <b>Systems Analyst</b> and I am an expert in the development of scalable and
+           secure web applications. I am passionate about working in teams and collaborating with
+            others 😁. #TeamWork</text>
     </div>
     <div class="mt-8">
-      <a class="btn" href="https://twitter.com/manuelernestog" target="_blank"> Let's connect!</a>
-      <a href="https://github.com/manuelernestog/astrofy" target="_blank" class="btn btn-outline ml-5">
-        Get This template
-      </a>
+      <a class="btn  bg-blue-500 rounded text-white text-lg hover:bg-white hover:text-blue-500 hover:border-2 hover:border-blue-500" href="https://www.linkedin.com/in/ezequiel-velasco/" target="_blank">
+        Let's connect!</a>
+
+        <a class="btn hover:bg-blue-500 ml-5 rounded hover:text-white text-lg bg-white text-blue-500 border-2 border-blue-500 hover:border-blue-500" href="https://drive.google.com/file/d/1evTF6Q1202zTdpEQypcOm2nuo13bVLd3/view?usp=sharing" target="_blank">
+          Download CV</a>
+      
     </div>
   </div>
 
@@ -34,45 +37,27 @@ const last_posts = posts.slice(0, 3);
   </div>
 
   <HorizontalCard
-    title="Demo Project 1"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
-    badge="NEW"
+    title="SakurApp"
+    img="/1.svg"
+    desc="Web app for small/medium business. It's a fullstack project that helps business with their customer's relationship. It provides usefull analytics to improve sales. #PersonalProject"
+    url="https://sakurapp-front-astro-tailwind-daysiui-oxxdheav8-ezevelasco.vercel.app/"
+    badge="Java 21 | Astro JS | Tailwind | SQL"
   />
   <div class="divider my-0"></div>
   <HorizontalCard
-    title="Demo Project 2"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
+    title="Salvador Patti Winery"
+    img="/4.svg"
+    desc="Winery web page which includes translations to ES, EN and PR. Rich in images and beautiful fonts. Made with wordpress and a variety of plugins."
+    url="https://salvadorpatti.com.ar/"
+    
   />
   <div class="divider my-0"></div>
   <HorizontalCard
-    title="Demo Project 3"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
-    badge="FOSS"
+    title="C&C Cohen Group"
+    img="/2.svg"
+    desc="Web page for a consultant business. High in profesional and formal content. Made with wordpress with a scalable perspective."
+    url="https://ccohengroup.com/"
+    
   />
 
-  <div>
-    <div class="text-3xl w-full font-bold mb-5 mt-10">Latest from blog</div>
-  </div>
-
-  {
-    last_posts.map((post) => (
-      <>
-        <HorizontalCard
-          title={post.data.title}
-          img={post.data.heroImage}
-          desc={post.data.description}
-          url={"/blog/" + createSlug(post.data.title, post.slug)}
-          target="_self"
-          badge={post.data.badge}
-        />
-        <div class="divider my-0" />
-      </>
-    ))
-  }
 </BaseLayout>
